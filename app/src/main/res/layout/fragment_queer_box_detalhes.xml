@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cliente.fragment.QueerBoxDetalhesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alegreyabold"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="Queer Box"
+            android:textColor="@color/preta"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_pessoas_vale" />
+
+        <TextView
+            android:id="@+id/sobre"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/comfortaalight"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:textStyle="bold"
+            android:text="Assine a Queer Box para você receber todo mês uma caixa de produtos sortidos com a temática LGBTQ+."
+            android:textColor="@color/preta"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnAssinar"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/botaocad"
+            android:layout_marginTop="30dp"
+            android:text="Assinar agora"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</FrameLayout>

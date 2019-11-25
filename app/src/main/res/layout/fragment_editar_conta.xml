@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context=".cliente.fragment.EditarContaFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="360dp"
+                android:layout_height="478dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F9F9F9"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="408dp"
+                            android:layout_height="59dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shape_background"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_background_menor" />
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            tools:src="@tools:sample/avatars[11]" />
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnUpload"
+                    android:layout_width="220dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="150dp"
+                    android:background="@drawable/btn_cadp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Escolher nova imagem"
+                    android:textSize="17sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/branca" />
+
+                <EditText
+                    android:id="@+id/addNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="12"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Nome"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/preta"
+                    app:theme="@style/StyledTilEditTextTheme" />
+
+                <EditText
+                    android:id="@+id/addTel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="6"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Telefone"
+                    android:inputType="number"
+                    android:textColor="@color/preta"
+                    app:theme="@style/StyledTilEditTextTheme" />
+
+                <EditText
+                    android:id="@+id/addEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="300dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="12"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/preta"
+                    app:theme="@style/StyledTilEditTextTheme" />
+
+                <EditText
+                    android:id="@+id/addSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="350dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="12"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Senha"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/preta"
+                    app:theme="@style/StyledTilEditTextTheme" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="410dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSalvar"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="120dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/botaocad"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Salvar"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/branca"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btnCancelar"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="135dp"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="30dp"
+                        android:background="@drawable/btn_exc"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Cancelar"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/branca"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

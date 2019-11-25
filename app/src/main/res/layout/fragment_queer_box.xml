@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cliente.fragment.QueerBoxFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textDetalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/alegreyalight"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="Assine a nossa caixa mensal"
+            android:textColor="@color/preta"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alegreyabold"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="Queer Box"
+            android:textColor="@color/preta"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_queer_box" />
+
+        <Button
+            android:id="@+id/btnMais"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/botaocad"
+            android:layout_marginTop="20dp"
+            android:text="Mais detalhes"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</FrameLayout>

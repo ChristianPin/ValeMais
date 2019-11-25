@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adm.fragment.ReservaClienteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/btnInfo"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#DA70D6">
+
+            <TextView
+                android:id="@+id/i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Informações do cliente"
+                android:textColor="@color/preta"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/btnShopp"
+            android:layout_height="52dp"
+            android:backgroundTint="#DDA0DD">
+
+            <TextView
+                android:id="@+id/s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Shopping para a entrega"
+                android:textColor="@color/preta"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewReservaCliente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</FrameLayout>

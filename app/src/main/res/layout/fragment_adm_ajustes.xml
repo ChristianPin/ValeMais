@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adm.fragment.AdmAjustesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/foto_usuario"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            tools:srcCompat="@tools:sample/avatars[4]" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nome_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Nome do usuário"
+            android:textColor="@color/quantum"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/email_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Email do usuário"
+            android:textColor="@color/quantum"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#F9F9F9">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="20dp"
+                android:text="Editar perfil"
+                android:textColor="@color/quantum"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/btnEditarPerfilAdm"
+                android:layout_width="19dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="350dp"
+                app:srcCompat="@drawable/ic_seta" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/btnChat"
+            android:layout_height="52dp"
+            android:backgroundTint="#87CEFA">
+
+            <TextView
+                android:id="@+id/chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Chat"
+                android:textColor="@color/preta"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/btnExcluir"
+            android:layout_height="52dp"
+            android:backgroundTint="#FA8072">
+
+            <TextView
+                android:id="@+id/exc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Excluir conta"
+                android:textColor="@color/preta"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/btnSair"
+            android:layout_height="52dp"
+            android:backgroundTint="#B22222">
+
+            <TextView
+                android:id="@+id/sair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Sair"
+                android:textColor="@color/branca"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

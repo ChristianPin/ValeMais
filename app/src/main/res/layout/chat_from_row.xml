@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp">
+
+
+
+        <TextView
+            android:id="@+id/textview_from_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:background="@drawable/minha_mensagem"
+            android:hint="Isto é uma mensagem"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:elevation="2dp"
+            android:textSize="18dp"
+            android:layout_alignParentRight="true"
+            android:text="Placeholder message"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--            <de.hdodenhof.circleimageview.CircleImageView-->
+            <!--                android:id="@+id/img_from_row"-->
+            <!--                android:layout_width="58dp"-->
+            <!--                android:layout_height="58dp"-->
+            <!--                app:civ_border_width="2dp"-->
+            <!--                android:layout_gravity="center_vertical"-->
+            <!--                android:background="@drawable/avatar"-->
+            <!--                android:layout_marginLeft="2dp"-->
+            <!--                app:srcCompat="@drawable/ic_logo" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="00:00"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/tempo_from"
+                android:textColor="@color/branca"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppins_medium"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

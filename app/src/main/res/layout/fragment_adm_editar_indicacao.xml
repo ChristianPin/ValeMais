@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".adm.fragment.AdmEditarIndicacaoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="198dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btn_cadp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Escolher nova imagem"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/branca" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Nome"
+                android:textSize="18dp"
+                android:textColor="@color/preta"/>
+
+            <EditText
+                android:id="@+id/addNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Nome"
+                android:inputType="textPersonName"
+                app:theme="@style/StyledTilEditTextTheme"
+                android:textColor="@color/preta"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Descrição"
+                android:textSize="18dp"
+                android:textColor="@color/preta"/>
+
+            <EditText
+                android:id="@+id/addDesc"
+                android:layout_width="275dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Descrição"
+                android:inputType="textMultiLine|textPersonName"
+                android:background="@drawable/edit_text_redondo"
+                android:textColor="@color/preta"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSalvar"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/btn_cadp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Salvar"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/branca"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnCancelar"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/btn_exc"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Cancelar"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/branca"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

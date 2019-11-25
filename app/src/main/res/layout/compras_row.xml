@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="#F9F9F9"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="333dp"
+        android:layout_height="109dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="99dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            app:srcCompat="@drawable/ic_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="125dp">
+
+            <TextView
+                android:id="@+id/textVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Preço"
+                android:textColor="@color/quantum" />
+
+            <TextView
+                android:id="@+id/valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="valor"
+                android:textColor="@color/quantum" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="180dp">
+
+            <TextView
+                android:id="@+id/textRe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Produto recebido?"
+                android:textColor="@color/quantum" />
+
+            <TextView
+                android:id="@+id/recebido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="recebido"
+                android:textColor="@color/quantum" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

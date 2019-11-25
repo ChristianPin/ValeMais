@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E1E1">
+
+
+    <TextView
+        android:id="@+id/txt_titulo_step"
+        android:layout_width="298dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/vegan"
+        android:gravity="center"
+        android:text="Indestrutível"
+        android:textColor="@color/pretob"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView1"
+        android:layout_width="412dp"
+        android:layout_height="295dp"
+        android:src="@drawable/ic_poney"
+        app:layout_constraintEnd_toEndOf="@+id/txt_titulo_step"
+        app:layout_constraintStart_toStartOf="@+id/txt_titulo_step"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_step" />
+
+    <TextView
+        android:id="@+id/txt_desc_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Vou reerguer como um arranha-céu"
+        android:textColor="@color/pretob"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_titulo_step"
+        app:layout_constraintStart_toStartOf="@+id/txt_titulo_step"
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView1" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

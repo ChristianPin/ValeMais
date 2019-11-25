@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.teste">
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Tema"
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name=".cliente.activity.FilmeActivity"></activity>
+        <activity android:name=".cliente.activity.SerieActivity" />
+        <activity android:name=".cliente.activity.ComunidadeValeActivity" />
+        <activity android:name=".mensagem.PerfilFotoActivity" />
+        <activity android:name=".mensagem.ChatLogActivity" />
+        <activity android:name=".mensagem.NovaMensagemActivity" />
+        <activity android:name=".mensagem.UltimasMensagensActivity" />
+        <activity android:name=".ResgatarSenhaActivity" />
+        <activity android:name=".adm.fragment.ListaShoppingFragment" />
+        <activity android:name=".adm.fragment.AdmCadShoppingFragment" />
+        <activity android:name=".adm.activity.AdmHomeActivity" />
+        <activity android:name=".adm.fragment.AdmAjustesFragment" />
+        <activity android:name=".adm.fragment.AdmEditarContaFragment" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".cliente.fragment.DetalhesProdutoFragment" />
+        <activity android:name=".AdmCadProdutoActivity" />
+        <activity android:name=".AdmProdDispActivity" />
+        <activity android:name=".AdmProdActivity" />
+        <activity android:name=".ListaProdutoActivity" />
+        <activity android:name=".cliente.activity.HomeActivity" />
+        <activity android:name=".CadUserActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Tema.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

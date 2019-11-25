@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".adm.fragment.MenuAdmIndicacaoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewCatalogoIndicacoes"
+            android:layout_width="303dp"
+            android:layout_height="166dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+
+            <ImageView
+                android:layout_width="133dp"
+                android:layout_height="160dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_netflix" />
+
+            <TextView
+                android:id="@+id/textViewInd"
+                android:layout_width="115dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="70dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="Catálogo de indicações"
+                android:textColor="@color/pretob"
+                android:textSize="15sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewCadIndicacao"
+            android:layout_width="303dp"
+            android:layout_height="166dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="start|center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_play" />
+
+            <TextView
+                android:id="@+id/textIndic"
+                android:layout_width="115dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Cadastrar indicação"
+                android:textColor="@color/pretob"
+                android:textSize="15sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_produtos"
+        android:icon="@drawable/ic_produtos_adm_menu"
+        android:title="Produtos"
+        />
+
+    <item
+        android:id="@+id/navigation_box"
+        android:icon="@drawable/ic_queer_box_adm_menu"
+        android:title="Queer Box"
+        />
+
+    <item
+        android:id="@+id/navigation_reservas"
+        android:icon="@drawable/ic_reserva_adm_menu"
+        android:title="Reservas"
+       />
+
+    <item
+        android:id="@+id/navigation_ajustes"
+        android:icon="@drawable/ic_ajustes_adm_menu"
+        android:title="Ajustes"
+        />
+
+</menu>

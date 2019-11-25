@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adm.activity.AdmHomeActivity">
+
+    <LinearLayout
+        android:id="@+id/cabecalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgCima"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_background"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="328dp"
+                android:layout_height="43dp"
+                android:background="@drawable/btn_search"
+                app:cardCornerRadius="8dp"
+                android:layout_gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/barraBuscaAdm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Pesquise um produto..."
+                        app:theme="@style/AppTheme.Toolbar" />
+
+                    <ImageButton
+                        android:id="@+id/btn_pesquisar_adm"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:background="@color/float_transparent"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dp"
+                        android:src="@drawable/search" />
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPesquisaAdm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/containerAdm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_below="@+id/cabecalho"/>
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/branca"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="#39265C"
+        app:itemTextColor="#39265C"
+        app:menu="@menu/bottom_nav_menu_adm"/>
+
+</RelativeLayout>

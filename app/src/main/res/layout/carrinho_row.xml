@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="#F9F9F9"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="333dp"
+        android:layout_height="109dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="99dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            app:srcCompat="@drawable/ic_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="120dp">
+
+            <TextView
+                android:id="@+id/textQtde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Qtde"
+                android:textColor="@color/quantum" />
+
+            <TextView
+                android:id="@+id/qtde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="qtde"
+                android:textColor="@color/quantum" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="180dp">
+
+            <TextView
+                android:id="@+id/textVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Preço"
+                android:textColor="@color/quantum" />
+
+            <TextView
+                android:id="@+id/valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="valor"
+                android:textColor="@color/quantum" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRemover"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="70dp"
+            android:layout_height="31dp"
+            android:layout_gravity="end|center_horizontal|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_exc"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Remover"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/branca"
+            android:textSize="14sp" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

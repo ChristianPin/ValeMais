@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".cliente.fragment.QueerBoxDetalhesCaixasFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="536dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/imgP"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/diamond" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="170dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/caixaP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Caixa Premium"
+                        android:textColor="@color/preta"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="230dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/valorP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Valor: "
+                        android:textColor="@color/preta"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/valorRsP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="R$ 100, 00"
+                        android:textColor="@color/preta"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="290dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/qtdeP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Quantidade de mimos: "
+                        android:textColor="@color/preta"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/qtdeP2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="20 mimos"
+                        android:textColor="@color/preta"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="320dp"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="350dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/obsP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Observação: "
+                        android:textColor="@color/preta"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/obsP2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Para retirada da Queer Box solicite um encontro poor meio da comunidade VALE+"
+                        android:textColor="@color/preta"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnCaixaP"
+                    android:layout_width="185dp"
+                    android:layout_height="41dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="230dp"
+                    android:background="@drawable/botaocad"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Selecionar Queer Box"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="536dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ingot" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="170dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/shopping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Caixa Gold "
+                        android:textColor="@color/preta"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="230dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/valor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Valor: "
+                        android:textColor="@color/preta"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/valorRs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="R$ 50, 00"
+                        android:textColor="@color/preta"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="290dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Quantidade de mimos: "
+                        android:textColor="@color/preta"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/dia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="10 mimos"
+                        android:textColor="@color/preta"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="320dp"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="350dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/hF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Observação: "
+                        android:textColor="@color/preta"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/horaFim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Para retirada da Queer Box solicite um encontro poor meio da comunidade VALE+"
+                        android:textColor="@color/preta"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnCaixaG"
+                    android:layout_width="185dp"
+                    android:layout_height="41dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="230dp"
+                    android:background="@drawable/botaocad"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Selecionar Queer Box"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

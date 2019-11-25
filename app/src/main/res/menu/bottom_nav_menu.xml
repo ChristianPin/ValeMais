@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_box"
+        android:icon="@drawable/ic_box"
+        android:title="Queer Box" />
+
+    <item
+        android:id="@+id/navigation_carrinho"
+        android:icon="@drawable/ic_camiseta"
+        android:title="Carrinho" />
+
+    <item
+        android:id="@+id/navigation_conta"
+        android:title="Conta"
+        android:icon="@drawable/ic_conta"/>
+
+</menu>

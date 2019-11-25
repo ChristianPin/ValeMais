@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_chat_background">
+
+    <LinearLayout
+        android:id="@+id/xxxtentacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="425dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#19191B"
+            app:cardElevation="10dp"
+            android:id="@+id/ver_perfil">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal|center_vertical">
+
+                <TextView
+                    android:id="@+id/nomeChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:hint="Meu Nome"
+                    android:textColor="@color/branca"
+                    android:textColorHint="@color/branca"/>
+
+                <ImageButton
+                    android:layout_width="63dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/avatar"
+                    android:id="@+id/ligar_button"></ImageButton>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewConversa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/branca">
+
+        <EditText
+            android:id="@+id/mensagemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:ems="12"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Digite sua mensagem"
+            android:textColor="@color/quantum"
+            android:textSize="15sp"
+            android:textColorHint="@color/quantum"
+            android:theme="@style/EditTextTheme"
+            app:theme="@style/StyledTilEditTextTheme" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnEnviarMensagem"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="87dp"
+                android:layout_height="37dp"
+                android:background="@drawable/botaocad"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_gravity="center"
+                android:text="Enviar"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/branca"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+

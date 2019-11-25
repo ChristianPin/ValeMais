@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cliente.fragment.DestaquesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnBanner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_banner" />
+
+
+                <TextView
+                    android:id="@+id/sobre1"
+                    android:layout_width="194dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/alegreyalight"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="start"
+                    android:text="As entregas são feitas pessoalmente!"
+                    android:textColor="@color/preta"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/sobre2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="100dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/alegreyalight"
+                    android:text="Clique aqui para ver os pontos de entrega em Manaus"
+                    android:textColor="@color/preta"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textDetalhes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/alegreyalight"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Produtos"
+                android:textColor="@color/preta"
+                android:textSize="30sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

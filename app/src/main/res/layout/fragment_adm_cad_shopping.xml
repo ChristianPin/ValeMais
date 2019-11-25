@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_backcadp"
+    tools:context=".adm.fragment.AdmCadShoppingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="415dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="360dp"
+                android:layout_height="397dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageView"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp" />
+
+                <Button
+                    android:id="@+id/btnUpload"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btncircle"
+                    android:text="Escolher imagem" />
+
+
+                <EditText
+                    android:id="@+id/addNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="130dp"
+                    android:ems="12"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Nome"
+                    android:inputType="textPersonName"
+                    app:theme="@style/StyledTilEditTextTheme"/>
+
+                <EditText
+                    android:id="@+id/addHoraInicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="180dp"
+                    android:ems="5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Hora início"
+                    android:inputType="time"
+                    app:theme="@style/StyledTilEditTextTheme"/>
+
+
+                <EditText
+                    android:id="@+id/addHoraFim"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="163dp"
+                    android:layout_marginTop="180dp"
+                    android:ems="7"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Hora fim"
+                    android:inputType="time"
+                    app:theme="@style/StyledTilEditTextTheme"/>
+
+                <EditText
+                    android:id="@+id/addDia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="230dp"
+                    android:ems="12"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Dia da semana"
+                    android:inputType="textPersonName"
+                    app:theme="@style/StyledTilEditTextTheme"/>
+
+                <EditText
+                    android:id="@+id/addEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="280dp"
+                    android:ems="12"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Endereço"
+                    android:inputType="textPersonName"
+                    app:theme="@style/StyledTilEditTextTheme"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="340dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnCadastrar"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="185dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/btn_cadp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Cadastrar shopping"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/branca"
+                    android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/btnCancelar"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="120dp"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/btn_exc"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Cancelar"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/branca"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

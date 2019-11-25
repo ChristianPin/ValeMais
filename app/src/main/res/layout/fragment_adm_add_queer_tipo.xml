@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".adm.fragment.AdmAddQueerTipoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="468dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewQueerBoxG"
+            android:layout_width="303dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+
+            <ImageView
+                android:layout_width="99dp"
+                android:layout_height="120dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ingot" />
+
+            <TextView
+                android:id="@+id/textViewCadQueerBox"
+                android:layout_width="224dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="88dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Queer Box Gold"
+                android:textColor="@color/pretob"
+                android:textSize="15sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewQueerBoxP"
+            android:layout_width="303dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+
+            <ImageView
+                android:layout_width="99dp"
+                android:layout_height="120dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/diamond" />
+
+            <TextView
+                android:id="@+id/textViewProdutosQueerBox"
+                android:layout_width="224dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="88dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Queer Box Premium"
+                android:textColor="@color/pretob"
+                android:textSize="15sp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
