@@ -52,7 +52,7 @@ class AdmListaPremiumQueerFragment : Fragment() {
 
                 for (caixa in dataSnapshot.children) {
                     val c = caixa.getValue(QueerBoxCaixa::class.java)
-                    Toast.makeText(context,caixa.key,Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(context,caixa.key,Toast.LENGTH_SHORT).show()
 
                     listQueerBox.add(c!!)
                 }

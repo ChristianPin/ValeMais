@@ -52,7 +52,7 @@
                 android:layout_marginRight="13dp"
                 android:background="@drawable/btn_cadp"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Selecionar"
+                android:text="Verificar"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/branca"
                 android:textSize="14sp" />

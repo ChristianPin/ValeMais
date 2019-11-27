@@ -54,7 +54,7 @@ class ListaPremiumProdutosQueerFragment : Fragment() {
 
                 for (prod in dataSnapshot.children) {
                     val p = prod.getValue(QueerBox::class.java)
-                    Toast.makeText(context,prod.key,Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(context,prod.key,Toast.LENGTH_SHORT).show()
 
                     listQueerBox.add(p!!)
                 }

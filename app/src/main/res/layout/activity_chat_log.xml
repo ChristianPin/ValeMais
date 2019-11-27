@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/ic_chat_background">
+    android:background="@drawable/back_chat">
 
     <LinearLayout
         android:id="@+id/xxxtentacion"
@@ -41,13 +41,18 @@
                     android:textColor="@color/branca"
                     android:textColorHint="@color/branca"/>
 
-                <ImageButton
-                    android:layout_width="63dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/avatar"
-                    android:id="@+id/ligar_button"></ImageButton>
 
             </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/ligar_button"
+                android:layout_width="40dp"
+                android:layout_height="33dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="18dp"
+                android:background="@color/float_transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/telephone"></ImageButton>
 
 
         </androidx.cardview.widget.CardView>

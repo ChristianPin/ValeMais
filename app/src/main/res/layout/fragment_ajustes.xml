@@ -172,27 +172,26 @@
 
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnSair"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#B22222">
 
+            <TextView
+                android:id="@+id/sair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Sair"
+                android:textColor="@color/branca"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/btnSair"
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:layout_alignParentBottom="true"
-        android:backgroundTint="#B22222">
 
-        <TextView
-            android:id="@+id/sair"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/poppins_medium"
-            android:text="Sair"
-            android:textColor="@color/branca"
-            android:textSize="16sp" />
-
-    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
