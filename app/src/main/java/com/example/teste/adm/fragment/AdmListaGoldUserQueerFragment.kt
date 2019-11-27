@@ -56,7 +56,7 @@ class AdmListaGoldUserQueerFragment : Fragment() {
 
                 for (user in dataSnapshot.children) {
                     val u = user.getValue(UserModelQueer::class.java)
-                    Toast.makeText(context,user.key, Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(context,user.key, Toast.LENGTH_SHORT).show()
 
                     listUserQueer.add(u!!)
                 }

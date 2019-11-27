@@ -30,9 +30,10 @@ class ListaGoldUserQueerAdapter (
     override fun onBindViewHolder(myViewHolder: MyViewHolder, i: Int) {
         var (userId, nome, cpf, tel,nasc, email, senha, img, diaPaga, nomeCaixa) = listUserQueer[i]
 
-//
+
         Picasso.get().load(img).into(myViewHolder.img)
         myViewHolder.nome.text = nome
+        myViewHolder.dataAss.text = diaPaga
 
 
     }
